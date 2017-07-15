@@ -6,6 +6,7 @@ outputs matched text and a boolean for flow control.
 # Input
 It takes plain text as 'body' for input. In the case of an email, be sure to
 select 'Body Plain' not 'Body HTML.'
+
 # Text Matching
 All text is matched after a trigger phrase (trigger\_phrase) up to a
 terminating character (term\_char). These are hard-coded but could be
@@ -20,7 +21,8 @@ search still works. Not case sensitive.
 
 # "Zap" Structure
 The test zap had the following structure:
-1. Gmail: New Email
+1. Gmail: New Email (a dedicated account or some kind of search based filter.
+   doesn't matter.)
 2. Run Python (Copy the contents of [parse_text.py](parse_text.py) here.\*)
 3. Filter: Only continue if (2: Run Python: Matched)
 4. Airtable: Create Record. Connect the text of the record to 
