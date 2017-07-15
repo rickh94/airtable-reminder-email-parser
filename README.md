@@ -11,9 +11,11 @@ All text is matched after a trigger phrase (trigger\_phrase) up to a
 terminating character (term\_char). These are hard-coded but could be
 set as inputs in zapier with a little tweaking (watch out for python regex
 syntax).
+
 trigger\_phrase default is `THIS IS A TEST.` Replace only this text to
 customize the phrase. Leave the r, quotes, and parentheses so that the python
 search still works. Not case sensitive.
+
 term_char defaults to a period. Replace only the period to customize it.
 
 # "Zap" Structure
