@@ -12,16 +12,16 @@ terminating character (term\_char). These are hard-coded but could be
 set as inputs in zapier with a little tweaking (watch out for python regex
 syntax).
 
-trigger\_phrase default is `THIS IS A TEST.` Replace only this text to
+`trigger_phrase` default is `THIS IS A TEST.` Replace only this text to
 customize the phrase. Leave the r, quotes, and parentheses so that the python
 search still works. Not case sensitive.
 
-term_char defaults to a period. Replace only the period to customize it.
+`term_char` defaults to a period. Replace only the period to customize it.
 
 # "Zap" Structure
 The test zap had the following structure:
 1. Gmail: New Email
-2. Run Python (This is where the python code goes.\*)
+2. Run Python (Copy the contents of [parse_text.py](parse_text.py) here.\*)
 3. Filter: Only continue if (2: Run Python: Matched)
 4. Airtable: Create Record. Connect the text of the record to 
 2: Run Python: Insert Text (I also put the full text of the email in a note
