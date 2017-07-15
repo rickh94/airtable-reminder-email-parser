@@ -32,4 +32,4 @@ directly from the email but if you try to do the time as well you can get
 timezone issues).
 
 \* It is important to only copy from below `# COPY THIS CODE INTO ZAPIER` or
-they input may be overridden which defeats the whole point.
+the input may be overridden which defeats the whole point.
